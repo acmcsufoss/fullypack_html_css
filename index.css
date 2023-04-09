@@ -193,6 +193,7 @@ html {
   margin-top: 2rem;
   object-fit: cover;
 }
+
 .infopic {
   margin-top: 2rem;
   border: 1px solid #dddddd00;
@@ -200,6 +201,7 @@ html {
   padding: 5px;
   width: 150px;
 }
+
 
 .register-form {
   background-color:#9ea8ff;;
@@ -230,6 +232,7 @@ html {
   
   
 }
+
 #name {
   margin-top: 20px;
   margin-bottom: 5px;
@@ -249,3 +252,4 @@ form label {
   text-align: left;
   text-indent: -1em;
 }
+
