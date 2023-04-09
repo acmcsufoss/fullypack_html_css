@@ -175,9 +175,20 @@ html {
   margin-top: 2rem;
   font-size: 2rem;
 }
+.title2 {
+  color: var(--sky_300);
+  margin-top: 1rem;
+  font-size: 3rem;
+}
 .pictureCaption {
   margin-top: 1rem;
 }
+.titleCaption {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
 .fullypic {
   margin-top: 2rem;
   object-fit: cover;
