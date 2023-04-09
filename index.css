@@ -175,13 +175,33 @@ html {
   margin-top: 2rem;
   font-size: 2rem;
 }
+.title2 {
+  color: var(--sky_300);
+  margin-top: 1rem;
+  font-size: 3rem;
+}
 .pictureCaption {
   margin-top: 1rem;
 }
+.titleCaption {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
 .fullypic {
   margin-top: 2rem;
   object-fit: cover;
 }
+
+.infopic {
+  margin-top: 2rem;
+  border: 1px solid #dddddd00;
+  border-radius: 9px;
+  padding: 5px;
+  width: 150px;
+}
+
 
 .register-form {
   background-color:#9ea8ff;;
@@ -197,6 +217,22 @@ html {
   
   
 }
+
+.login-form {
+  background-color:#9ea8ff;;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 35%;
+  border-radius: 10px;
+  text-align: center;
+  height: 300px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-indent: 1em;
+  
+  
+}
+
 #name {
   margin-top: 20px;
   margin-bottom: 5px;
