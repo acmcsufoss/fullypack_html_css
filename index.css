@@ -1,133 +1,11 @@
 /* Add your font via Google Font */
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
 
-/* CSS Reset, you don't need to understand these, i just copy paste it so it reset the CSS style */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-/* end of reset */
+/* CSS Reset. You don't need to understand these.
+ * They're only here to make CSS consistent across all browsers. */
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
 
-/* Define your color scheme here, taken from Fullyhacks color scheme */
+/* Define your color scheme here, taken from Fullyhacks color scheme. */
 :root {
   --body_bg: #fffaf1;
   --sky_100: #abe1ff;
@@ -150,12 +28,14 @@ html {
   background-color: var(--body_bg);
   font-family: "Rubik";
 }
+
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
+
 .nav {
   background-color: var(--purple_300);
   padding: 2rem;
@@ -165,19 +45,23 @@ html {
   justify-content: space-around;
   font-size: 1.5rem;
 }
+
 .navlink { 
     text-decoration: none;
     color: black;
     list-style: none;
 }
+
 .title {
   color: var(--sky_300);
   margin-top: 2rem;
   font-size: 2rem;
 }
+
 .pictureCaption {
   margin-top: 1rem;
 }
+
 .fullypic {
   margin-top: 2rem;
   object-fit: cover;
