@@ -1,5 +1,5 @@
 /* Add your font via Google Font */
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
 
 /* CSS Reset. You don't need to understand these.
  * They're only here to make CSS consistent across all browsers. */
@@ -7,7 +7,8 @@
 
 /* Define your color scheme here, taken from Fullyhacks color scheme. */
 :root {
-  --body_bg: #fffaf1;
+  background-image: url("");
+  background-size: 1000px 1000px;
   --sky_100: #abe1ff;
   --sky_300: #18aaff;
   --blue_300: #385ddf;
@@ -25,8 +26,10 @@
 }
 
 html {
-  background-color: var(--body_bg);
-  font-family: "Rubik";
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }
 
 .container {
@@ -55,7 +58,7 @@ html {
 .title {
   color: var(--sky_300);
   margin-top: 2rem;
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 .pictureCaption {
@@ -65,4 +68,12 @@ html {
 .fullypic {
   margin-top: 2rem;
   object-fit: cover;
+}
+
+p {
+  border: 3px solid black;
+  outline: #4CAF50 solid 10px;
+  margin: auto;  
+  padding: 500px;
+  text-align: center;
 }
