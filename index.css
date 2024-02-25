@@ -7,12 +7,9 @@
 
 /* Define your color scheme here, taken from Fullyhacks color scheme. */
 :root {
-  background-image: url("https://cdna.artstation.com/p/assets/images/images/050/592/060/original/michael-tenebrae-tokyo-rain.gif?1655217933");
-  background-size: 1000px 1000px;
-  --sky_100: #ebf0f3;
+  --sky_100: #abe1ff;
   --sky_300: #18aaff;
   --blue_300: #385ddf;
-  --dark-navy: #000004;
   --purple_300: #9ea8ff;
   --purple_hover: #3b3561;
   --purple_500: #4f38df;
@@ -29,6 +26,7 @@
 html {
   font-family: "Pixelify Sans", sans-serif;
   font-optical-sizing: auto;
+  font-weight: bold;
   font-style: normal;
 }
 
@@ -39,23 +37,7 @@ html {
   flex-direction: column;
 }
 
-.nav {
-  background-color: var(--purple_300);
-  padding: 2rem;
-  width: 100%;
-  display: flex;
-  list-style: none;
-  justify-content: space-around;
-  font-size: 1.5rem;
-}
-
-.navlink {
-  text-decoration: none;
-  color: black;
-  list-style: none;
-}
-
-button.startButton {
+button.startButton { 
   margin-top: 15rem;
   background: #dffff952;
   color: #dffff9;
@@ -76,7 +58,6 @@ button.startButton:hover {
 }
 
 .title {
-  margin-top: 2rem;
   color: #dffff9;
   margin-bottom: 2rem;
   padding: 10px;
@@ -111,7 +92,6 @@ button.startButton:hover {
   from {
     text-shadow: 0 0 10px #00e1ff;
   }
-
   to {
     text-shadow: 0 0 20px #00e5ff;
   }
@@ -121,7 +101,6 @@ button.startButton:hover {
   from {
     text-shadow: 0 0 5px #00e1ff;
   }
-
   to {
     text-shadow: 0 0 20px #00e1ff;
   }
@@ -131,7 +110,6 @@ button.startButton:hover {
   from {
     box-shadow: 0 0 20px #00e1ff;
   }
-
   to {
     box-shadow: 0 0 50px #00e1ff;
   }
@@ -145,7 +123,6 @@ button.startButton:hover {
     -ms-transform: translateY(0px);
     -o-transform: translateY(0px);
   }
-
   50% {
     transform: translateY(8px);
     -webkit-transform: translateY(8px);
@@ -153,7 +130,6 @@ button.startButton:hover {
     -ms-transform: translateY(8px);
     -o-transform: translateY(8px);
   }
-
   100% {
     transform: translateY(0px);
     -webkit-transform: translateY(0px);
@@ -163,89 +139,3 @@ button.startButton:hover {
   }
 }
 
-.personality-image {
-  width: 300px;
-  margin: 1rem auto;
-}
-
-.description {
-  font-size: 1.2rem;
-  color: var(--dark-navy);
-  background-color: var(--pink_100);
-  border: 2px solid var(--pink_300);
-  box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
-  padding: 0.543rem 1rem;
-  margin: 1rem auto;
-  width: 80%;
-}
-
-.strengths {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 1rem auto;
-  max-width: 80%;
-}
-
-.strengths li {
-  background-color: var(--pink_100);
-  border: 2px solid var(--pink_300);
-  box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
-  border-radius: 5px;
-  margin: 0.5rem;
-  padding: 0.5rem 1rem;
-}
-
-.friend-quote {
-  font-size: 1rem;
-  color: var(--dark-navy);
-  background-color: var(--pink_100);
-  border: 2px solid var(--pink_300);
-  box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
-  padding: 1rem;
-  margin: 1rem auto;
-  border-radius: 5px;
-  width: 80%;
-}
-
-.sushi-search-guide {
-  font-size: 1rem;
-  color: var(--dark-navy);
-  background-color: var(--pink_100);
-  border: 2px solid var(--pink_300);
-  box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
-  padding: 1rem;
-  margin: 1rem auto;
-  width: 80%;
-  border-radius: 5px;
-}
-
-.glowing-text {
-  color: var(--sky_100);
-  /* Light color for text */
-  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
-  /* White glow effect */
-}
-
-.play-again {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 1rem auto;
-  max-width: 40%;
-  font-size: 1rem;
-  color: var(--dark-navy);
-  background-color: var(--pink_100);
-  border: 2px solid var(--pink_300);
-  box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
-  padding: 0.5rem;
-  margin: 1rem auto;
-  width: 40%;
-  border-radius: 5px;
-  transition-duration: 0.4s;
-}
-
-.play-again:hover {
-  background-color: var(--pink_100);
-  background: rgba(189, 126, 130, 0.5);
-}
