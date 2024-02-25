@@ -7,8 +7,6 @@
 
 /* Define your color scheme here, taken from Fullyhacks color scheme. */
 :root {
-  background-image: url("");
-  background-size: 1000px 1000px;
   --sky_100: #abe1ff;
   --sky_300: #18aaff;
   --blue_300: #385ddf;
@@ -39,41 +37,104 @@ html {
   flex-direction: column;
 }
 
-.nav {
-  background-color: var(--purple_300);
-  padding: 2rem;
-  width: 100%;
-  display: flex;
+button.startButton { 
+  margin-top: 15rem;
+  background: #dffff952;
+  color: #dffff9;
+  border: 8px solid #dffff9;
+  height: 100px;
+  width: 250px;
+  text-decoration: none;
   list-style: none;
-  justify-content: space-around;
-  font-size: 1.5rem;
+  font-size: 4rem;
+  animation: hovering 2s infinite ease-in-out, glowbox 1s infinite alternate linear, glowstartbutton 1s infinite alternate linear;
+  -webkit-animation: hovering 2s infinite ease-in-out, glowbox 1s infinite alternate linear, glowstartbutton 1s infinite alternate linear;
+  animation-delay: 0s;
+  transition: background-color 0.3 ease;
 }
 
-.navlink { 
-    text-decoration: none;
-    color: black;
-    list-style: none;
+button.startButton:hover {
+  background-color: #dffff98f;
 }
 
 .title {
-  color: var(--sky_300);
-  margin-top: 2rem;
+  color: #dffff9;
+  margin-bottom: 2rem;
+  padding: 10px;
+  justify-content: center;
   font-size: 4rem;
+  animation-name: glow;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  text-align: center;
 }
 
 .pictureCaption {
-  margin-top: 1rem;
+  color: #dffff9;
+  font-size: 2.3rem;
+  animation-name: glow;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  text-align: center;
 }
 
 .fullypic {
-  margin-top: 2rem;
+  margin-top: 1rem;
   object-fit: cover;
+  margin-left: 25rem;
 }
 
-p {
-  border: 3px solid black;
-  outline: #4CAF50 solid 10px;
-  margin: auto;  
-  padding: 500px;
-  text-align: center;
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #00e1ff;
+  }
+  to {
+    text-shadow: 0 0 20px #00e5ff;
+  }
+}
+
+@keyframes glowstartbutton {
+  from {
+    text-shadow: 0 0 5px #00e1ff;
+  }
+  to {
+    text-shadow: 0 0 20px #00e1ff;
+  }
+}
+
+@keyframes glowbox {
+  from {
+    box-shadow: 0 0 20px #00e1ff;
+  }
+  to {
+    box-shadow: 0 0 50px #00e1ff;
+  }
+}
+
+@keyframes hovering {
+  0% {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(8px);
+    -webkit-transform: translateY(8px);
+    -moz-transform: translateY(8px);
+    -ms-transform: translateY(8px);
+    -o-transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+  }
 }
